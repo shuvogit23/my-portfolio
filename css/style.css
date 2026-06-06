@@ -10,91 +10,22 @@
 }
 
 :root {
-    /* TEXT  */
-    --default-text-color: #FFFFFF;
-    --span-text-color: #26ff00;
-    --paragraph-text-color: #8e8989;
-    --btn-text-color: #ffffff;
-
-
-    /* END TEXT */
-
-    /* BACKGROUNDS */
-    --default-bg-color: #09012c;
-    --nav-bg-color: #01074d;
-    --btn-bg-color: #189d00;
-
-    /* END BACKGROUNDS */
-
-
-    /* BUTTON */
-    --button-bg-color: #270c6f5d;
-
-    /* END BUTTON */
-
-
-    /* CARD */
-    --card-bg-color: #0d012fd7;
-
-    /* END CARD */
+    --bg: #0f172a;
+    --bg2: #111827;
+    --card: #1e293b;
+    --main: #38bdf8;
+    --white: #ffffff;
+    --text: #cbd5e1;
 }
 
-.bg-div {
-    min-height: 100vh;
-
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)),
-        url("/upload/images/hero-bg.png");
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    ;
+body {
+    background: var(--bg);
+    color: var(--white);
+    overflow-x: hidden;
 }
 
-
-header {
-    width: 100vw;
-    height: auto;
-    overflow: hidden;
-    background: transparent;
-}
-
-.header-container {
-    width: 90vw;
-    height: auto;
-    margin: 10px auto;
-    padding: 15px 0;
-    background: var(--nav-bg-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 40px;
-}
-
-.logo {
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    background: transparent;
-    font-weight: 600;
-}
-
-.logo h1,
-.navbar,
-.navbar nav,
-.navbar nav ul,
-.navbar nav ul li,
-.navbar nav ul li a,
-.header-btn,
-.header-btn a,
-.main-content,
-.main-content h1,
-.main-content span,
-.main-content p,
-.main-content h2,
-.fa-brands {
-    background: transparent;
+html {
+    scroll-behavior: smooth;
 }
 
 .navbar nav ul {
